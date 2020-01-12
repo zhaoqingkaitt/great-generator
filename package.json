@@ -1,0 +1,28 @@
+{
+  "name": "great-generator",
+  "version": "1.0.0",
+  "description": "模拟数据",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoqingkaitt/great-generator.git"
+  },
+  "keywords": [
+    "generator"
+  ],
+  "author": "zhaott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoqingkaitt/great-generator/issues"
+  },
+  "homepage": "https://github.com/zhaoqingkaitt/great-generator#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
