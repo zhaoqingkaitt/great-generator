@@ -2,7 +2,7 @@
   "name": "great-generator",
   "version": "1.0.0",
   "description": "模拟数据",
-  "main": "index.js",
+  "main": "main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --config webpack.config.js",

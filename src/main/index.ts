@@ -1,4 +1,4 @@
-export class Shape {
+export class Shape1 {
     area: number;
     color: string;
     constructor ( name: string, width: number, height: number ) {
@@ -11,7 +11,7 @@ export class Shape {
     }
 }
 
-var square = new Shape("square", 20, 20);
+var square = new Shape1("square", 20, 20);
 console.log( square.shoutout() );
 console.log( 'Area of Shape: ' + square.area );
 console.log( 'Color of Shape: ' + square.color );

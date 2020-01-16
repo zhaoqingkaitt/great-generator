@@ -1,4 +1,4 @@
-class Person{
+export class Person{
 	public name:string;
 }
 let person=new Person();
