@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: "development",
     devtool: "inline-source-map", 
-    entry: "./src/person.ts",
+    entry: "./src/main/index.ts",
     output: {
         path: __dirname + '/dist',
-        filename: '[name].bundle.js'
+        filename: '[name].js'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js']
