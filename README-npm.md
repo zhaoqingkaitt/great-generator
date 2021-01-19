@@ -9,21 +9,21 @@ npm i great-generator --save
 
 ### 数字
 ```js
-const { NumberUtils} = require('great-jsutils');
+const { GNumberUtils} = require('great-generator');
 
 ```
 ### 联系方式
 ```js
-const { GContactUtils} = require('great-jsutils');
+const { GContactUtils} = require('great-generator');
 
 ```
 ### 个人
 ```js
-const { GPersonUtils} = require('great-jsutils');
+const { GPersonUtils} = require('great-generator');
 
 ```
 ### 时间
 ```js
-const {TimeUtils} = require('great-jsutils');
+const {GTimeUtils} = require('great-generator');
 
 ```
