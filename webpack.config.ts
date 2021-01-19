@@ -5,6 +5,10 @@ const path = require('path');
 const ENTIRYS = {
     'great-generator/index':'./src/index.ts',
     'great-generator/g-number-utils':'./src/g-number-utils',
+    'great-generator/g-contact-utils':'./src/g-contact-utils',
+    'great-generator/g-person-utils':'./src/g-person-utils',
+    'great-generator/g-time-utils':'./src/g-time-utils',
+
     'example':'./example/demo01',
 };
 
