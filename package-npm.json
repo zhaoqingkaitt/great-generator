@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "github",
+    "url": "github+https://gitee.com/zhtt/angular-demo.git"
+  },
+  "author": "zhaott",
   "license": "ISC",
   "dependencies": {
     "great-jsutils": "^1.3.9"
