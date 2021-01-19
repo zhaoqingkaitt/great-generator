@@ -8,26 +8,26 @@ export class GContactUtils {
 
     /**
      * 手机号
-     * @param size：生成几条
+     * @param number：生成几条
      */
-    static mobile({size=1}={}){
-        return DataGeneratorUtils.mobile({size});
+    static mobile({number=1}={}){
+        return DataGeneratorUtils.mobile({size: number});
     }
 
 
     /**
      * 邮箱
-     * @param size：生成几条
+     * @param number：生成几条
      */
-    static email({size=1}={}){
+    static email({number=1}={}){
         return '开发中……';
     }
 
     /**
      * 联系地址
-     * @param size：生成几条
+     * @param number：生成几条
      */
-    static address({size=1}={}){
+    static address({number=1}={}){
         return '开发中……';
     }
 }
