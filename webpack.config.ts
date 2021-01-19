@@ -43,6 +43,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {from: "package-npm.json", to: "great-generator/package.json"},
+                {from: "README-npm.md", to: "great-generator/README.md"},
                 {from: "./dist/great-generator", to: "../node_modules/great-generator"},
             ],
             options: {
