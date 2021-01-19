@@ -1,6 +1,6 @@
 {
   "name": "great-generator",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "模拟数据",
   "main": "main/index.js",
   "scripts": {
