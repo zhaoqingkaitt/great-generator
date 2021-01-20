@@ -1,6 +1,10 @@
 import webpack = require("webpack");
-const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
+// 文件拷贝
+const CopyPlugin = require('copy-webpack-plugin');
+// 分析文件依赖关系：http://localhost:8919
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 
 const ENTIRYS = {
     'great-generator/index':'./src/index.ts',
@@ -14,6 +18,9 @@ const ENTIRYS = {
 
 module.exports = {
     entry: ENTIRYS,
+    optimization: {
+        minimize: true,
+    },
     devtool: "inline-source-map",
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -52,6 +59,7 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({ // ProvidePlugin 可以将模块作为一个变量，被webpack在其他每个模块中引用。只有你需要使用此变量的时候，这个模块才会被 require 进来。
             _: ['lodash']
-        })
+        }),
+        new BundleAnalyzerPlugin({ analyzerPort: 8919 })
     ]
 };

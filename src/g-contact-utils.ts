@@ -1,4 +1,5 @@
-const {DataGeneratorUtils} = require('great-jsutils');
+// const {DataGeneratorUtils} = require('great-jsutils');
+import {DataGeneratorUtils} from "great-jsutils";
 
 /**
  * 联系方式
