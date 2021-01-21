@@ -4,7 +4,8 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 // 分析文件依赖关系：http://localhost:8919
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-
+// 用于排除node_modules目录下的代码被打包进去
+const nodeExternals = require('webpack-node-externals');
 
 const ENTIRYS = {
     'great-generator/index':'./src/index.ts',
@@ -37,6 +38,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.tsx', '.js']
     },
+    externals: [nodeExternals()],
     module: {
         rules: [
             {

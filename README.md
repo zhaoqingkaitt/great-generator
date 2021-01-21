@@ -78,3 +78,10 @@ module.exports = merge(common, {
 ```
 打包后会自动出现一个端口为8919的站点，站点内容如下：
 ### CommonsChunkPlugin：提取通用模块文件
+
+### 排除node_modules目录下的代码
+https://blog.csdn.net/yang450712123/article/details/79282092
+externals: [nodeExternals()]用于排除node_modules目录下的代码被打包进去，因为放在node_modules目录下的代码应该通过npm安装。
+```
+npm i webpack-node-externals --save-dev
+```
