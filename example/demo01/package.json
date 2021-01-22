@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "great-generator": "0.0.5"
+    "great-generator": "0.0.7"
   }
 }

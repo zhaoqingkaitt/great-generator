@@ -9,10 +9,10 @@ const nodeExternals = require('webpack-node-externals');
 
 const ENTIRYS = {
     'great-generator/index':'./src/index.ts',
-    'great-generator/g-number-utils':'./src/g-number-utils',
-    'great-generator/g-contact-utils':'./src/g-contact-utils',
-    'great-generator/g-person-utils':'./src/g-person-utils',
-    'great-generator/g-time-utils':'./src/g-time-utils',
+    'great-generator/base/g-number-utils':'./src/base/g-number-utils',
+    'great-generator/base/g-contact-utils':'./src/base/g-contact-utils',
+    'great-generator/base/g-person-utils':'./src/base/g-person-utils',
+    'great-generator/base/g-time-utils':'./src/base/g-time-utils',
 
     'example':'./example/demo01',
 };
@@ -62,6 +62,6 @@ module.exports = {
         new webpack.ProvidePlugin({ // ProvidePlugin 可以将模块作为一个变量，被webpack在其他每个模块中引用。只有你需要使用此变量的时候，这个模块才会被 require 进来。
             _: ['lodash']
         }),
-        new BundleAnalyzerPlugin({ analyzerPort: 8919 })
+        // new BundleAnalyzerPlugin({ analyzerPort: 8919 })
     ]
 };
