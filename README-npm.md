@@ -69,7 +69,10 @@ const { GContactUtils} = require('great-generator');
 | number | 生成的数量 | 否，默认为1 | number |
 ```js
 const {GContactUtils} = require('great-generator');
-console.log(GContactUtils.mobile());
+// 生成一个手机号
+console.log(GContactUtils.mobile()); // 15019056146
+// 生成3个手机号
+console.log(GContactUtils.mobile({number: 3})); // [ '18052557552', '13822156849', '15667326112' ]
 ```
 
 ### 4、时间
@@ -80,22 +83,37 @@ const {GTimeUtils} = require('great-generator');
 | 参数 | 名称 | 必传 | 参数类型
 | ------ | ------ | ------ | ------ |
 | number | 生成的数量 | 否，默认为1 | number |
-
+```js
+const {GTimeUtils} = require('great-generator');
+// 生成一个日期类型
+console.log(GTimeUtils.date()); // 2021-06-04T21:26:30.713Z
+console.log(GTimeUtils.date({number: 2})); // [2021-06-04T21:26:30.713Z, 2021-06-04T21:26:30.713Z]
+```
 #### 4.2、时间字符串
 | 参数 | 名称 | 必传 | 参数类型
 | ------ | ------ | ------ | ------ |
 | number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GTimeUtils} = require('great-generator');
+// 生成一个字符串类型
+console.log(GTimeUtils.str()); // 2018-07-10 20:06:23
+// 生成2个字符串类型
+console.log(GTimeUtils.str({number: 2})); // [ '2019-06-17 01:48:32', '2024-10-06 21:30:29' ]
 
-### 4、编号
+```
+
+### 5、编号
 ```js
 const {GCodeUtils} = require('great-generator');
 ```
-#### 4.1、时间
+#### 5.1、编号
 | 参数 | 名称 | 必传 | 参数类型
 | ------ | ------ | ------ | ------ |
 | number | 生成的数量 | 否，默认为1 | number |
 | upperCase | 是否大写 | 否，默认为true | boolean |
 | length | 长度 | 否，默认为1 | number |
+| prefix | 前缀 | 否 | string |
+| suffix | 后缀 | 否 | string |
 ```js
 const {GCodeUtils} = require('great-generator');
 console.log(GCodeUtils.letter()); // E
