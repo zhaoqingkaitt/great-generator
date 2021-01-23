@@ -3,6 +3,7 @@ const {TimeUtils} = require('great-jsutils');
 export class GTimeUtils {
 
     static date({number=1}={}){
+        number = number>=1?number:1;
         const dates:Array<any> = [];
         for(let i=0;i<number;i++){
             const date = TimeUtils.random();
@@ -12,6 +13,7 @@ export class GTimeUtils {
     }
 
     static str({number=1}={}){
+        number = number>=1?number:1;
         const dates:Array<any> = [];
         for(let i=0;i<number;i++){
             const date = TimeUtils.random();
