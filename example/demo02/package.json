@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "great-generator": "0.0.7"
+    "great-generator": "0.0.7",
+    "great-jsutils": "^1.3.10"
   }
 }
