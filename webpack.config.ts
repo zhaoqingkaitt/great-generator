@@ -14,6 +14,9 @@ const ENTIRYS = {
     'great-generator/base/g-person-utils':'./src/base/g-person-utils',
     'great-generator/base/g-time-utils':'./src/base/g-time-utils',
 
+    'great-generator/org/g-organization-utils':'./src/org/g-organization-utils',
+    'great-generator/org/g-department-utils':'./src/org/g-department-utils',
+
     'example':'./example/demo01',
 };
 

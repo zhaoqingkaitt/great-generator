@@ -9,8 +9,6 @@ export class GOrganizationModel extends GCommonModel{
         public orgFullName?:string,
         public orgShortName?:string,
         public parentId?:string,
-        public address?:string,
-        public phone?:string,
         // 联系人
         public contacts?:string,
         public children?:GOrganizationModel[],

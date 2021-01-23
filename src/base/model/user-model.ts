@@ -4,7 +4,7 @@ export class UserModel extends GCommonModel{
     constructor(
         public username?: string,
         public password?: string,
-        public dept?: string,
+        public deptName?: string,
         public orgName?: string,
     ) {
         super();
