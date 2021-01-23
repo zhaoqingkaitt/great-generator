@@ -22,8 +22,8 @@ export class GPersonUtils {
             user.name = DataGeneratorUtils.personName();
             user.phone = DataGeneratorUtils.mobile();
             user.address = GContactUtils.address();
-            user.deptName = GDepartmentUtils.randomDeptName();
-            user.orgName = GOrganizationUtils.randomOrgName();
+            user.deptName = GDepartmentUtils.deptName();
+            user.orgName = GOrganizationUtils.orgName();
             userList.push(user);
         }
         return number==1?userList[0]: userList;
