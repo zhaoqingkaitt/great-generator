@@ -15,11 +15,10 @@ export class GOrganizationUtils {
         const orgList:Array<UserModel> = [];
         for (let i=0;i<number;i++){
             const org = new GOrganizationModel();
-            org.name = DataGeneratorUtils.personName();
+            org.orgName = GOrganizationUtils.orgName();
             org.orgCode = DataGeneratorUtils.letter({length: 10});
             org.phone = DataGeneratorUtils.mobile();
             org.address = GContactUtils.address();
-            org.orgName = GOrganizationUtils.orgName();
             orgList.push(org);
         }
         return number==1?orgList[0]: orgList;
