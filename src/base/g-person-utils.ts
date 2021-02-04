@@ -2,6 +2,7 @@ import {UserModel} from "./model/user-model";
 import {GContactUtils} from "./g-contact-utils";
 import {GDepartmentUtils} from "../org/g-department-utils";
 import {GOrganizationUtils} from "../org/g-organization-utils";
+import {CommonUtils} from "great-jsutils";
 
 const {DataGeneratorUtils} = require('great-jsutils');
 
@@ -16,6 +17,7 @@ export class GPersonUtils {
         const userList:Array<UserModel> = [];
         for (let i=0;i<number;i++){
             const user = new UserModel();
+            user.id = CommonUtils.uuid();
             user.username = DataGeneratorUtils.letter({length: 10});
             user.password = DataGeneratorUtils.letter({length: 10});
             user.email = DataGeneratorUtils.email();

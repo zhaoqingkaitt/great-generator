@@ -1,4 +1,4 @@
-import {DataGeneratorUtils} from "great-jsutils";
+import {CommonUtils, DataGeneratorUtils} from "great-jsutils";
 import {UserModel} from "../base/model/user-model";
 import {GContactUtils} from "../base/g-contact-utils";
 import {GOrganizationModel} from "./model/g-organization-model";
@@ -15,8 +15,9 @@ export class GOrganizationUtils {
         const orgList:Array<UserModel> = [];
         for (let i=0;i<number;i++){
             const org = new GOrganizationModel();
+            org.id = CommonUtils.uuid();
             org.orgName = GOrganizationUtils.orgName();
-            org.orgCode = DataGeneratorUtils.letter({length: 10});
+            org.orgCode = DataGeneratorUtils.letter({length: 10}) as string;
             org.phone = DataGeneratorUtils.mobile();
             org.address = GContactUtils.address();
             orgList.push(org);

@@ -1,4 +1,4 @@
-import {DataGeneratorUtils} from "great-jsutils";
+import {CommonUtils, DataGeneratorUtils} from "great-jsutils";
 import {GContactUtils} from "../base/g-contact-utils";
 import {GDepartmentModel} from "./model/g-department-model";
 
@@ -14,8 +14,9 @@ export class GDepartmentUtils {
         const orgList:Array<GDepartmentModel> = [];
         for (let i=0;i<number;i++){
             const dept = new GDepartmentModel();
-            org.deptName = this.deptName();
-            org.deptCode = DataGeneratorUtils.letter({length: 10});
+            dept.id = CommonUtils.uuid();
+            dept.deptName = this.deptName();
+            dept.deptCode = DataGeneratorUtils.letter({length: 10}) as string;
             dept.phone = DataGeneratorUtils.mobile();
             dept.address = GContactUtils.address();
             orgList.push(dept);
