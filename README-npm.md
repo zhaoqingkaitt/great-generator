@@ -58,6 +58,15 @@ const {GPersonUtils} = require('great-generator');
 console.log(GPersonUtils.randomName()); // 吉云飞
 console.log(GPersonUtils.randomName({number: 3 })); // [ '解龙', '党虎', '卜霞霞' ]
 ```
+### 2.2、用户
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GPersonUtils} = require('great-generator');
+console.log(GPersonUtils.randomUser()); // 生成一个用户
+console.log(GPersonUtils.randomUser({number: 3 })); // 生成三个用户
+```
 
 ### 3、联系方式
 ```js
@@ -73,6 +82,28 @@ const {GContactUtils} = require('great-generator');
 console.log(GContactUtils.mobile()); // 15019056146
 // 生成3个手机号
 console.log(GContactUtils.mobile({number: 3})); // [ '18052557552', '13822156849', '15667326112' ]
+```
+### 3.2、邮箱
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GContactUtils} = require('great-generator');
+// 生成一个邮箱
+console.log(GContactUtils.email()); // 8267636@163.com
+// 生成3个邮箱
+console.log(GContactUtils.email({number: 3})); //[ '2695452@126.com', '3383935@sina.com', '8850451@foxmail.com' ]
+```
+### 3.3、地址
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GContactUtils} = require('great-generator');
+// 生成一个地址
+console.log(GContactUtils.address());
+// 生成三个地址
+console.log(GContactUtils.address({number: 3}));
 ```
 
 ### 4、时间
@@ -121,4 +152,10 @@ console.log(GCodeUtils.letter({number:8})); // [ 'W', 'M', 'F', 'H', 'R', 'L', '
 console.log(GCodeUtils.letter({number:8, upperCase: false})); // [ 'd', 'd', 'c', 'w', 'r', 'e', 'u', 'u', 'y' ]
 console.log(GCodeUtils.letter({length:8, upperCase: false})); // xgvxrpyb
 console.log(GCodeUtils.letter({number:8, length:2, upperCase: false})); // [ 'rylkpddf', 'lguhovtx' ]
+```
+### 6、树结构数据
+```js
+const {GTreeUtils} = require('great-generator');
+const nodes1 = GTreeUtils.tree();
+const nodes2 = GTreeUtils.tree({maxLevel: 3, maxNum: 7});
 ```

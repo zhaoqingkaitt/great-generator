@@ -13,7 +13,7 @@ export class GNumberUtils {
     }
 
     /**
-     * 随机生成一组整数值
+     * 随机生成一组浮点数值
      * @param max：最大值，默认为10
      * @param min：最小值，默认为0
      * @param number：个数，默认为1
