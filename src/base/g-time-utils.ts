@@ -2,6 +2,9 @@ const {TimeUtils} = require('great-jsutils');
 
 export class GTimeUtils {
 
+    /**
+     * @param number：个数，默认一个
+     */
     static date({number=1}={}){
         number = number>=1?number:1;
         const dates:Array<any> = [];
@@ -12,6 +15,10 @@ export class GTimeUtils {
         return number===1?dates[0]: dates;
     }
 
+
+    /**
+     * @param number：个数，默认一个
+     */
     static str({number=1}={}){
         number = number>=1?number:1;
         const dates:Array<any> = [];

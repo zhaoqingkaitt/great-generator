@@ -8,10 +8,17 @@ const {DataGeneratorUtils} = require('great-jsutils');
 
 export class GPersonUtils {
 
+    /**
+     * @param number：个数，默认一个
+     */
     static randomName({number=1}={}){
         return DataGeneratorUtils.personName({size: number});
     }
 
+
+    /**
+     * @param number：个数，默认一个
+     */
     static randomUser({number=1}={}){
         number = number>=1?number:1;
         const userList:Array<UserModel> = [];

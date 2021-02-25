@@ -3,6 +3,12 @@ import {GOrganizationUtils} from "../org/g-organization-utils";
 
 export class GTreeUtils {
 
+    /**
+     * 生成树结构数据
+     * @param maxLevel：最大层级
+     * @param minLevel：最小层级
+     * @param maxNum：子节点个数
+     */
     static tree({maxLevel = 5, minLevel = 1, maxNum = 5} = {}) {
         const nodes = [];
         const level = NumberUtils.randomInt({min: minLevel, max: maxLevel}) as number;
