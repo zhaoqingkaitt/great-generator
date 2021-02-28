@@ -159,3 +159,16 @@ const {GTreeUtils} = require('great-generator');
 const nodes1 = GTreeUtils.tree();
 const nodes2 = GTreeUtils.tree({maxLevel: 3, maxNum: 7});
 ```
+## 组织机构
+### 1、机构
+```js
+const {GOrganizationUtils} = require('great-generator');
+```
+### 2、部门
+```js
+const {GDepartmentUtils} = require('great-generator');
+```
+### 3、部门
+```js
+const {GPostUtils} = require('great-generator');
+```
