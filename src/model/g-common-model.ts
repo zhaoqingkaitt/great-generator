@@ -1,3 +1,6 @@
+/**
+ * 公共属性
+ */
 export class GCommonModel {
     [key: string]: any;
     constructor(
