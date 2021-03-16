@@ -154,10 +154,17 @@ console.log(GCodeUtils.letter({length:8, upperCase: false})); // xgvxrpyb
 console.log(GCodeUtils.letter({number:8, length:2, upperCase: false})); // [ 'rylkpddf', 'lguhovtx' ]
 ```
 ### 6、树结构数据
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| maxLevel | 最多几层 | 否，默认为5 | number |
+| minLevel | 最少几层 | 否，默认为1 | number |
+| maxNum | 每层最多几个 | 否，默认为5 | number |
 ```js
 const {GTreeUtils} = require('great-generator');
 const nodes1 = GTreeUtils.tree();
+console.log(nodes1);
 const nodes2 = GTreeUtils.tree({maxLevel: 3, maxNum: 7});
+console.log(nodes2);
 ```
 ## 组织机构
 ### 1、机构
@@ -168,7 +175,7 @@ const {GOrganizationUtils} = require('great-generator');
 ```js
 const {GDepartmentUtils} = require('great-generator');
 ```
-### 3、部门
+### 3、岗位
 ```js
 const {GPostUtils} = require('great-generator');
 ```
