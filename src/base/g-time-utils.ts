@@ -2,7 +2,7 @@ const {TimeUtils} = require('great-jsutils');
 
 export class GTimeUtils {
 
-    /**
+    /**生成时间类型数据
      * @param number：个数，默认一个
      */
     static date({number=1}={}){
@@ -16,7 +16,7 @@ export class GTimeUtils {
     }
 
 
-    /**
+    /**生成时间字符串
      * @param number：个数，默认一个
      */
     static str({number=1}={}){
