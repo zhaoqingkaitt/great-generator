@@ -29,3 +29,31 @@
 
 </body>
 </html>
+<!--
+let colorNodes = document.getElementsByClassName('main-color-value');
+let colorList = [];
+for(let i=0;i<colorNodes.length;i++){
+    let node = colorNodes[i];
+    if(node.parentNode.parentNode.parentNode.parentNode.className.startsWith('color-palette')){
+        colorList.push(node.innerText);
+    }
+}
+console.log(colorList.length);
+console.log(JSON.stringify(colorList));
+
+var indexList = [6,7,5,8,4,9,3,1,2,0];
+var indexs = [];
+for(let i=0;i<10;i++){
+    for(let j=0;j<12;j++){
+      indexs.push(indexList[i]+j*10);
+    }
+}
+console.log(indexs);
+
+var newColorList = [];
+indexs.forEach((v)=>{
+    if(colorList[v])
+    newColorList.push(colorList[v]);
+});
+console.log(JSON.stringify(newColorList));
+-->
