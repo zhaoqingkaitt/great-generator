@@ -8,6 +8,7 @@ npm i great-generator --save
 [great-ngform](https://www.npmjs.com/package/great-ngform)、
 [great-zorroutils](https://www.npmjs.com/package/great-zorroutils)
 
+## 一、基本工具类
 ### 1、数字
 | 参数 | 名称 | 必传 | 参数类型
 | ------ | ------ | ------ | ------ |
@@ -105,32 +106,9 @@ console.log(GContactUtils.address());
 // 生成三个地址
 console.log(GContactUtils.address({number: 3}));
 ```
-
-### 4、时间
+### 4、生成颜色（GColorUtils）
 ```js
-const {GTimeUtils} = require('great-generator');
-```
-#### 4.1、时间
-| 参数 | 名称 | 必传 | 参数类型
-| ------ | ------ | ------ | ------ |
-| number | 生成的数量 | 否，默认为1 | number |
-```js
-const {GTimeUtils} = require('great-generator');
-// 生成一个日期类型
-console.log(GTimeUtils.date()); // 2021-06-04T21:26:30.713Z
-console.log(GTimeUtils.date({number: 2})); // [2021-06-04T21:26:30.713Z, 2021-06-04T21:26:30.713Z]
-```
-#### 4.2、时间字符串
-| 参数 | 名称 | 必传 | 参数类型
-| ------ | ------ | ------ | ------ |
-| number | 生成的数量 | 否，默认为1 | number |
-```js
-const {GTimeUtils} = require('great-generator');
-// 生成一个字符串类型
-console.log(GTimeUtils.str()); // 2018-07-10 20:06:23
-// 生成2个字符串类型
-console.log(GTimeUtils.str({number: 2})); // [ '2019-06-17 01:48:32', '2024-10-06 21:30:29' ]
-
+const {GColorUtils} = require('great-generator');
 ```
 
 ### 5、编号
@@ -153,7 +131,33 @@ console.log(GCodeUtils.letter({number:8, upperCase: false})); // [ 'd', 'd', 'c'
 console.log(GCodeUtils.letter({length:8, upperCase: false})); // xgvxrpyb
 console.log(GCodeUtils.letter({number:8, length:2, upperCase: false})); // [ 'rylkpddf', 'lguhovtx' ]
 ```
-### 6、树结构数据
+### 6、时间
+```js
+const {GTimeUtils} = require('great-generator');
+```
+#### 6.1、时间
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GTimeUtils} = require('great-generator');
+// 生成一个日期类型
+console.log(GTimeUtils.date()); // 2021-06-04T21:26:30.713Z
+console.log(GTimeUtils.date({number: 2})); // [2021-06-04T21:26:30.713Z, 2021-06-04T21:26:30.713Z]
+```
+#### 6.2、时间字符串
+| 参数 | 名称 | 必传 | 参数类型
+| ------ | ------ | ------ | ------ |
+| number | 生成的数量 | 否，默认为1 | number |
+```js
+const {GTimeUtils} = require('great-generator');
+// 生成一个字符串类型
+console.log(GTimeUtils.str()); // 2018-07-10 20:06:23
+// 生成2个字符串类型
+console.log(GTimeUtils.str({number: 2})); // [ '2019-06-17 01:48:32', '2024-10-06 21:30:29' ]
+
+```
+### 7、树结构数据
 | 参数 | 名称 | 必传 | 参数类型
 | ------ | ------ | ------ | ------ |
 | maxLevel | 最多几层 | 否，默认为5 | number |
