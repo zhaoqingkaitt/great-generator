@@ -38,4 +38,12 @@ export class GPersonUtils {
         return number==1?userList[0]: userList;
     }
 
+    /**
+     * 身份证号
+     * @param number：个数，默认一个
+     */
+    static idcard({number=1}={}){
+        number = number>=1?number:1;
+    }
+
 }
