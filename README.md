@@ -88,3 +88,7 @@ npm i webpack-node-externals --save-dev
 测试是否可提交
 https://github.com/Lie8466/better-js
 http://sinhub.cn/2019/07/getting-started-guide-of-sentry/
+测试是否可提交  
+```
+git clone git@github.com:zhaoqingkaitt/great-generator.git
+```
