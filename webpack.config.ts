@@ -9,10 +9,13 @@ const nodeExternals = require('webpack-node-externals');
 
 const ENTIRYS = {
     'great-generator/index':'./src/index.ts',
-    'great-generator/base/g-number-utils':'./src/base/g-number-utils',
+    'great-generator/base/g-code-utils':'./src/base/g-code-utils',
+    'great-generator/base/g-color-utils':'./src/base/g-color-utils',
     'great-generator/base/g-contact-utils':'./src/base/g-contact-utils',
+    'great-generator/base/g-number-utils':'./src/base/g-number-utils',
     'great-generator/base/g-person-utils':'./src/base/g-person-utils',
     'great-generator/base/g-time-utils':'./src/base/g-time-utils',
+    'great-generator/base/g-tree-utils':'./src/base/g-tree-utils',
 
     'great-generator/org/g-organization-utils':'./src/org/g-organization-utils',
     'great-generator/org/g-department-utils':'./src/org/g-department-utils',
