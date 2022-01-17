@@ -93,3 +93,9 @@ http://sinhub.cn/2019/07/getting-started-guide-of-sentry/
 ```
 git clone git@github.com:zhaoqingkaitt/great-generator.git
 ```
+```
+registry = "https://registry.npm.taobao.org/"
+registry = "https://registry.npmjs.org/"
+npm publish --registry=https://registry.npmjs.org/
+
+```
