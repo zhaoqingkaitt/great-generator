@@ -27,6 +27,11 @@ npm install copy-webpack-plugin --save-dev
 ```
 ## 打包
 首次打包时，dist下需要有编译好的包，此包可以安装一个拷贝过来
+* 查看源  
+npm config get registry
+
+* 设置源  
+npm config set registry https://registry.npmjs.org/
 ## tsconfig.json
 ```
 {
