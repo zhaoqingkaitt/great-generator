@@ -26,7 +26,7 @@ npm install ts-loader --save-dev
 npm install copy-webpack-plugin --save-dev
 ```
 ## 打包
-首次打包时，dist下需要有编译好的包，此包可以安装一个拷贝过来
+首次打包时，dist下需要有编译好的包，此包可以安装一个拷贝过来（此处需要优化）
 * 查看源  
 npm config get registry
 
