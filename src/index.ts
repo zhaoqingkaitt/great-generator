@@ -6,6 +6,7 @@ import {GCodeUtils} from "./base/g-code-utils";
 import {GColorUtils} from "./base/g-color-utils";
 import {GOrganizationUtils} from "./org/g-organization-utils";
 import {GDepartmentUtils} from "./org/g-department-utils";
+import {GPostUtils} from "./org/g-post-utils";
 import {GTreeUtils} from "./base/g-tree-utils";
 
 export default {
@@ -17,5 +18,6 @@ export default {
     GTimeUtils,
     GTreeUtils,
     GOrganizationUtils,
-    GDepartmentUtils
+    GDepartmentUtils,
+    GPostUtils
 }
