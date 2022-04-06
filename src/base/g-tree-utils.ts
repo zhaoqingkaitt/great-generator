@@ -57,15 +57,21 @@ export class GTreeUtils {
 
 export class TreeKeysCfg {
     constructor(
+        // 主键key
         public idKey: string,
+        // 名称key
         public nameKey: string,
+        // 父节点key
         public parentIdKey: string,
+        // 子节点key
         public childrenKey: string,
         // 生成几层节点
         public maxLevel: number,
+        // 至少几层节点
         public minLevel: number,
         // 每层节点数量
         public maxNum: number,
+        // 每层最少节点数
         public minNum: number,
     ) {
     }
