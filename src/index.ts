@@ -10,6 +10,7 @@ import {GPostUtils} from "./org/g-post-utils";
 import {GTreeUtils} from "./base/g-tree-utils";
 
 export default {
+    // 普通格式编号
     GCodeUtils,
     GColorUtils,
     GContactUtils,
