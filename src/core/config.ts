@@ -10,6 +10,9 @@ export class GConfigData{
         private pseronNames?:Array<String>,
         private dateTimes?:Array<String>,
         private colors?:Array<String>,
+        private phones?:Array<String>,
+        private emails?:Array<String>,
+        private addresss?:Array<String>,
     ) {
     }
 
