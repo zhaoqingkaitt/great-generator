@@ -20,4 +20,12 @@ export class GConfigData{
         this.config = config;
     }
 
+    static update(config:GConfigData){
+        if(!GConfigData.config){
+            GConfigData.config = this.init();
+        }
+        Object.assign(GConfigData.config, config);
+
+    }
+
 }
