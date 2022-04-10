@@ -1,3 +1,5 @@
+import {ObjectUtils} from 'great-jsutils';
+
 /**
  * 公共配置数据,
  * 二次开发时，方便从自定义数据中，生成随机数据
@@ -24,6 +26,7 @@ export class GConfigData{
         if(!GConfigData.config){
             GConfigData.config = this.init();
         }
+        ObjectUtils.filter(config);
         Object.assign(GConfigData.config, config);
 
     }
