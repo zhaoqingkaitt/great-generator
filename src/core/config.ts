@@ -28,4 +28,8 @@ export class GConfigData{
 
     }
 
+    static reset(){
+        this.init();
+    }
+
 }
