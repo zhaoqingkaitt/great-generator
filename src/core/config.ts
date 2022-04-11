@@ -31,6 +31,8 @@ export class GConfigData{
 
     }
 
-    static res
+    static reset(){
+        this.init();
+    }
 
 }
