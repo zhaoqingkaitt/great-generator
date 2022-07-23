@@ -106,3 +106,7 @@ registry = "https://registry.npmjs.org/"
 npm publish --registry=https://registry.npmjs.org/
 
 ```
+### clone
+```
+git clone https://github.com/zhaoqingkaitt/great-generator.git
+```
