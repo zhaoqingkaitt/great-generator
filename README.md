@@ -110,3 +110,15 @@ npm publish --registry=https://registry.npmjs.org/
 ```
 git clone https://github.com/zhaoqingkaitt/great-generator.git
 ```
+
+### 提交异常
+Failed to connect to github.com port 443 after 21035 ms: Timed out
+> 最近使用git提交代码发现总是报错，查了很多资料，比如关闭或打开vpn，取消代理服务器，取消全局代理等都无法解决问题，最后找到直接找github的IP地址修改hosts文件后成功了。
+
+```
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy http://127.0.0.1:1080
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git push
+```
