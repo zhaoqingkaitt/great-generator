@@ -19,6 +19,7 @@ const ENTIRYS = {
 
     'great-generator/org/g-organization-utils':'./src/org/g-organization-utils',
     'great-generator/org/g-department-utils':'./src/org/g-department-utils',
+    //'great-generator/org/g-post-utils':'./src/org/g-post-utils',
 
     'example':'./example/demo01',
 };

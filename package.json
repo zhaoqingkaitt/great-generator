@@ -1,11 +1,12 @@
 {
   "name": "great-generator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "webpack"
+    "package": "webpack",
+    "npm:package:json": "nvm use 10.12.0 && npm run package && cd dist/main && npm publish --registry=https://registry.npmjs.org/"
   },
   "author": "",
   "license": "ISC",
