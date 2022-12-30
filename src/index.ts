@@ -8,6 +8,7 @@ import {GOrganizationUtils} from "./org/g-organization-utils";
 import {GDepartmentUtils} from "./org/g-department-utils";
 import {GPostUtils} from "./org/g-post-utils";
 import {GTreeUtils} from "./base/g-tree-utils";
+import {GBooleanUtils} from "./base/g-boolean-utils";
 
 export default {
     // 普通格式编号
@@ -18,6 +19,7 @@ export default {
     GPersonUtils,
     GTimeUtils,
     GTreeUtils,
+    GBooleanUtils,
     GOrganizationUtils,
     GDepartmentUtils,
     GPostUtils

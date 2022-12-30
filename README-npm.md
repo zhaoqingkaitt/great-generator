@@ -170,6 +170,11 @@ console.log(nodes1);
 const nodes2 = GTreeUtils.tree({maxLevel: 3, maxNum: 7});
 console.log(nodes2);
 ```
+### GBooleanUtils
+```js
+const {GBooleanUtils} = require('great-generator');
+console.log(GBooleanUtils.random());// 返回一个布尔值
+```
 ## 组织机构
 ### 1、机构
 ```js
