@@ -173,7 +173,7 @@ console.log(nodes2);
 ### GBooleanUtils
 ```js
 const {GBooleanUtils} = require('great-generator');
-console.log(GBooleanUtils.random());// 返回一个布尔值
+console.log(GBooleanUtils.random({number:1}));// 返回指定数量的布尔值，大于1时为数组
 ```
 ## 组织机构
 ### 1、机构
