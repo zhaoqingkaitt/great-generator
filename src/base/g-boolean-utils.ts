@@ -1,5 +1,9 @@
 export class GBooleanUtils{
 
+    /**
+     * 随机生成boolean值，默认为1个
+     * @param number：生成的boolean值数量
+     */
     static  random(
         {
             number = 1
