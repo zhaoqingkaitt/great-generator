@@ -9,6 +9,7 @@ export class GCommonModel {
         public email?: string,
         public phone?: string,
         public address?: string,
+        public type: string,
     ) {
     }
 }
