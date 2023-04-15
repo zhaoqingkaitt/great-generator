@@ -1,5 +1,8 @@
 const {TimeUtils} = require('great-jsutils');
 
+/**
+*时间工具类
+*/
 export class GTimeUtils {
 
     /**生成时间类型数据
