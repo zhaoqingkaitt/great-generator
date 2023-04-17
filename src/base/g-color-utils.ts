@@ -2,13 +2,14 @@ export class GColorUtils{
 
     /**
      * 随机生成一个颜色
+     * alpha：透明度，默认为0.5
      */
-    static randomColor() {
+    static randomColor({alpha=0.5}={}):string {
         const color = `rgb(
                 ${Math.round(Math.random() * 255)},
                 ${Math.round(Math.random() * 255)},
                 ${Math.round(Math.random() * 255)},
-                0.5)`;
+                alpha)`;
         return this.colorRGBtoHex(color);
     }
 
@@ -16,7 +17,7 @@ export class GColorUtils{
      * rgb颜色转16进制
      * @param color：rgb颜色值
      */
-    static colorRGBtoHex(color) {
+    static colorRGBtoHex(color):string {
         const rgb = color.split(',');
         const r = parseInt(rgb[0].split('(')[1]);
         const g = parseInt(rgb[1]);
