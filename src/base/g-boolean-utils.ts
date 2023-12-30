@@ -9,7 +9,7 @@ export class GBooleanUtils{
             number = 1
         }={}
     ){
-        if(number==1){
+        if(number===1){
             return Math.random() > 0.5;
         }else {
             const result = new Array();
