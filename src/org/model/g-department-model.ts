@@ -9,6 +9,7 @@ export class GDepartmentModel extends GCommonModel{
         public deptShortName?:string,
         public parentId?:string,
         public level?:number,
+        public leaf?:boolean,
         public children?:GDepartmentModel[],
     ) {
         super();
